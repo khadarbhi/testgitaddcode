@@ -1,0 +1,37 @@
+<p>azurelabs works!</p>
+<html>
+    <p>
+    Angular Static Web App Deployed (1)
+Created New Azure Static Web App [https://zealous-glacier-0e8132610.1.azurestaticapps.net/]
+Created CI / CD Pipeline Using Github Actions and Azure
+Any changes commited to GitHub , Automatic build and deploy happens to Azure using the YML file created.
+Enabled Redirect Url.
+Dotnet Core Application (1)
+Created New Dotnet Core Application [https://helpdeskticket.azurewebsites.net/api/]
+Deployed the separate API to Azure
+All the Connection String and App setting configured from the Azure portal not in the VS.
+Created Few API for fetching the data for the ticket raised and also saving the ticket information in the Event Queue in the storage account .
+Storage Account(3)
+Created an Storage account with data storage for Container, Table and Queue [https://storagelearningdata.blob.core.windows.net/]
+Create table called support in the table storage
+Create Event Queue called appqueue for the receiving the new tickets with rentention of 7 days.
+created an Blob container for storing the documents receiving from frontend.
+Azure Function(2Fn + 1 DB)
+Created an Azure Function with HTTP trigger for getting the Information of the User [https://innovationfunctionapp.azurewebsites.net/api/']
+Created another Azure Function with Event Trigger for pulling the infromation from the Event queue in the storage account. [https://innovationfunctionapp1.azurewebsites.net]
+Deployed both the Azure Function in the Azure and all the CORS and the Configuration like app setting are configured in the Azure Portal.
+Created Azure SQL database and created table for HTTP trigger data fetching.
+Event Trigger constantly will look for the incoming request and send the processed information to the Storage Account Table. created before called Tickets.
+Azure AD Authentication with OAUTH(2 WEB + 1 API)
+Created an Dotnet Applications [https://oauth-webapp-authorization.azurewebsites.net]
+[https://oauth-webapi-authorization.azurewebsites.net/api/course]
+https://oauthazurewebapp-demo.azurewebsites.net [getting the claims information]
+Created an Application Object and Created User Groups
+Users : tempuser@mitsri20073269gmail.onmicrosoft.com;
+testuser@mitsri20073269gmail.onmicrosoft.com
+User Microsoft Identity related Packages and Scafolded the Project for Sign In and Sign Out screen
+Implemented the OAUTH Authentication with Azure AD connection and created scoped access for Storage account
+Role Based Authentication applied to Storage Account And Impersonifcation setup created for Application Object , delegating the access to Application Object for the user.
+Storage account with Container has Course.json which is used as DB
+</p>
+</html>
